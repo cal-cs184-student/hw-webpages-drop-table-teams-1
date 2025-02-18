@@ -18,14 +18,14 @@ My algorithm is much better than one that checks the entire bounding box because
 
 <div align="center">
     <img src="./my_images/task1.png" width="50%">
-    <p><em>Figure 1</em> Jaggies! Grrrr...</p>
+    <p><em>Figure 1</em>. Jaggies! Grrrr...</p>
 </div>
 
 _Extra credit_: My optimizations are as aforementioned, and performance comparisons from rendering _basic test_ images are detailed in Tab. 1.
 
 <div align="center">
     <table>
-        <caption><em>Table 1</em> My method compared with the baseline of traversing the entire bounding box. Timed in microseconds.</caption>
+        <caption><em>Table 1</em>. My method compared with the baseline of traversing the entire bounding box. Timed in microseconds.</caption>
         <thead>
             <tr>
                 <th>Image</th>
@@ -67,7 +67,7 @@ For supersampling, I modified the pipeline by letting the triangle rasterization
 
 <div align="center">
     <img src="./my_images/task2pdf-1.png" width="100%">
-    <p><em>Figure 2</em> The effect of supersampling. From left to right the sampling rates are respectively 1, 4, 9, and 16.</p>
+    <p><em>Figure 2</em>. The effect of supersampling. From left to right the sampling rates are respectively 1, 4, 9, and 16.</p>
 </div>
 
 It is possible to achieve identical results without requiring extra memory by traversing the scene pixel by pixel (such that sampled subpixels are directly averaged). However, this would require traversing the entire bounding box, which brings a speed overhead.
@@ -76,7 +76,7 @@ _Extra credit_: I also implemented low-discrepancy sampling using the 2-3 Halton
 
 <div align="center">
     <img src="./my_images/task2bpdf-1.png" width="100%">
-    <p><em>Figure 3</em> On the left is the grid-based method and on the right is Halton sampling. The latter separates red and blue better in the borderline pixels, creating a more transitional appearance, while in the former most borderline pixels are uniformly violet. Here we use a sampling rate of 4.</p>
+    <p><em>Figure 3</em>. On the left is the grid-based method and on the right is Halton sampling. The latter separates red and blue better in the borderline pixels, creating a more transitional appearance, while in the former most borderline pixels are uniformly violet. Here we use a sampling rate of 4.</p>
 </div>
 
 ## Task 3
@@ -85,14 +85,14 @@ I chose Megan's pose from my favorite xkcd comic: 162 Angular Momentum! See Fig.
 
 <div align="center">
     <img src="./my_images/task3pdf-1.png" width="100%">
-    <p><em>Figure 4</em> WITH YOU.</p>
+    <p><em>Figure 4</em>. WITH YOU.</p>
 </div>
 
 _Extra Credit_: I made the E key "rotate counterclockwise by 5 degrees" and the R key clockwise. I did it by adding a transformation in to the svg-to-ndc matrix of the _DrawRend_ pipeline. The transformation consists of a translation such that the center of the svg coincides with the origin, a rotation, and a translation back. Fig. 5 shows the rotated robot.
 
 <div align="center">
     <img src="./my_images/task3b.png" width="50%">
-    <p><em>Figure 5</em> Rotation of the svg.</p>
+    <p><em>Figure 5</em>. Rotation of the svg.</p>
 </div>
 
 ## Task 4
@@ -101,7 +101,7 @@ Barycentric coordinates can be used to blend values (such as colors) of vertices
 
 <div align="center">
     <img src="./my_images/task4pdf-1.png" width="100%">
-    <p><em>Figure 6</em> The color triangle and the color wheel.</p>
+    <p><em>Figure 6</em>. The color triangle and the color wheel.</p>
 </div>
 
 ## Task 5
@@ -112,7 +112,7 @@ Fig. 7 shows experimentation results on the image _texmap test 1_. As shown, bil
 
 <div align="center">
     <img src="./my_images/task5pdf-1.png" width="100%">
-    <p><em>Figure 7</em> From left to right: nearest w/ sampling rate 1, bilinear w/ rate 1, nearest w/ rate 16, and bilinear w/ rate 16.</p>
+    <p><em>Figure 7</em>. From left to right: nearest w/ sampling rate 1, bilinear w/ rate 1, nearest w/ rate 16, and bilinear w/ rate 16.</p>
 </div>
 
 ## Task 6
@@ -121,7 +121,7 @@ Level sampling is accomplished by selecting the appropriate mipmap level based o
 
 <div align="center">
     <img src="./my_images/task6pdf-1.png" width="100%">
-    <p><em>Figure 8</em> From left to right: nearest+zero, bilinear+zero, nearest+nearest, bilinear+nearest.</p>
+    <p><em>Figure 8</em>. From left to right: nearest+zero, bilinear+zero, nearest+nearest, bilinear+nearest.</p>
 </div>
 
 Among the explored antialiasing methods, supersampling has very high speed and memory overhead, but yields good quality for simple patterns like lines and triangles. Meanwhile, pixel sampling methods are more efficient, have nearly no memory overhead, and are more effective for textured images. Level sampling methods in mipmapping handle antialiasing at the cost of blurring the image (similar to low-pass prefiltering) and have a slight memory overhead (one-third of the original texture), but seem to be the most effective at antialiasing textured images.
@@ -140,5 +140,5 @@ The Python source code is available in the "src" folder of the repository. My en
 
 <div align="center">
     <img src="./my_images/competition.png" width="100%">
-    <p><em>Figure 9</em> I love low-poly art : )</p>
+    <p><em>Figure 9</em>. Life is beautiful : )</p>
 </div>

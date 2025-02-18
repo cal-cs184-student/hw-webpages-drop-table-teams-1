@@ -2,6 +2,8 @@
 
 [GitHub Repository](https://github.com/cal-cs184-student/sp25-hw1-drop-table-teams/)
 
+<div class="custom-width" style="font-family: 'Optima', sans-serif;">
+
 ## Overview
 
 In this assignment I implemented a rasterizer for triangles in SVG format, including single-colored ones, ones with barycentric-interpolated colors, and textured ones. The implementation contains multiple different methods for antialiasing. My main takeaway from this assignment is that I will never take rasterization for granted again... it is straightforward but actually contains many engineering-wise details that have to be taken care of, and there are many ways to implement the same functionality but with widely different outcomes (in terms of performace and overhead).
@@ -141,4 +143,6 @@ The Python source code is available in the "src" folder of the repository. My en
 <div align="center">
     <img src="./my_images/competition.png" width="100%">
     <p><em>Figure 9</em>. Life is beautiful : )</p>
+</div>
+
 </div>

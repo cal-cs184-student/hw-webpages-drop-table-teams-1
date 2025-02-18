@@ -3,6 +3,7 @@ remote_theme: abhinavs/moonwalk
 theme_config:
   appearance: "dark"
   appearance_toggle: true 
+  custom_css: assets/css/custom.css
 
 plugins:
   - jekyll-feed

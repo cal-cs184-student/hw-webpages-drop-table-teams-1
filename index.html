@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Optima:wght@400;600&display=swap" rel="stylesheet">
 	<style>
 			h1 {
 				text-align: center;
@@ -21,7 +21,7 @@
 			}
 
 			body {
-				font-family: 'Inter', sans-serif;
+				font-family: 'Optima', sans-serif;
 				line-height: 1.4;
 				color: #32323a;
 				background-color: #ffffff;
@@ -57,23 +57,77 @@
 	</style>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS184/284A Homework Webpages</title>
+    <title>CS184/284A Homework Webpages - Shiran Yuan</title>
 	</head>
 	<body>
-		<div class="wrapper">
-			<header>
-				<h1 style="align-self:flex-end;">CS184/284A Homework Webpages</h1>
-			</header>
-			<main>
-				<div class="content">
-					<ul>
-						<li><a href="/hw1/index.html">Homework 1</a></li>
-						<li><a href="/hw2/index.html">Homework 2</a></li>
-						<li><a href="/hw3/index.html">Homework 3</a></li>
-						<li><a href="/hw4/index.html">Homework 4</a></li>
-					</ul>
-				</div>
-			</main>
+		<h1>CS184/284A Homework Webpages - Shiran Yuan</h1>
+		<section class="image-grid">
+			<figure>
+				<a href="/hw1/index.html">
+					<img src="./hw1/my_images/competition.png" alt="Homework 1">
+					<figcaption>Homework 1<br>Rasterizer</figcaption>
+				</a>
+			</figure>
+			<figure>
+				<a href="/hw2/index.html">
+					<img src="./wip.jpg" alt="Homework 2">
+					<figcaption>Homework 2</figcaption>
+				</a>
+			</figure>
+			<figure>
+				<a href="/hw3/index.html"></a>
+					<img src="./wip.jpg" alt="Homework 3">
+					<figcaption>Homework 3</figcaption>
+				</a>
+			</figure>
+			<figure>
+				<a href="/hw4/index.html">
+					<img src="./wip.jpg" alt="Homework 4">
+					<figcaption>Homework 4</figcaption>
+				</a>
+			</figure>
+		</section>
+		<style>
+			.image-grid figcaption {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+				background-color: rgba(0, 0, 0, 0.5);
+				padding: 5px 10px;
+				border: 1px solid black;
+				font-size: 16px;
+				font-weight: bold;
+			}
+		</style>
+	</div>
+	<style>
+		.image-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 10px;
+			width: 100%;
+		}
+
+		.image-grid figure {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			padding-top: 75%;
+		}
+
+		.image-grid img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	</style>
 		</div>
 	</body>
 	<script>

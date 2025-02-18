@@ -1,7 +1,7 @@
 remote_theme: abhinavs/moonwalk
 
 theme_config:
-  appearance: "light"
+  appearance: "dark"
   appearance_toggle: true 
 
 plugins:

@@ -1,7 +1,3 @@
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 # CS 284 HW1 - Shiran Yuan
 
 [GitHub Repository](https://github.com/cal-cs184-student/sp25-hw1-drop-table-teams/)

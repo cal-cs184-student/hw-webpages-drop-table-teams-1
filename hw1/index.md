@@ -139,6 +139,6 @@ So here is the pipeline I assembled:
 The Python source code is available in the "src" folder of the repository. My entry to the competition is as in Fig. 9.
 
 <div align="center">
-    <img src="./docs/competition.png" width="100%">
+    <img src="./my_images/competition.png" width="100%">
     <p><em>Figure 9</em> I love low-poly art : )</p>
 </div>

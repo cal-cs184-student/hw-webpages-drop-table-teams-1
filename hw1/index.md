@@ -1,6 +1,4 @@
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+{% include mathjax.html %}
 
 # CS 284 HW1 - Shiran Yuan
 

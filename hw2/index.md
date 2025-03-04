@@ -37,7 +37,11 @@ De Casteljau's algorithm can be applied to Bezier surfaces as well by first find
 
 ## Task 3
 
-Using the half-edge data structure one can easily iterate through neighboring edges (and thus triangles) of a vertex. Given a triangle with vertices $a,b,c\in\mathbb R^3$ we can then calculate its area as $$A=||((b_2-a_2)(c_3-a_3)-(b_3-a_3)(c_2-a_2),(b_1-a_1)(c_3-a_3)-(b_3-a_3)(c_1-a_1),(b_1-a_1)(c_2-a_2)-(b_2-a_2)(c_1-a_1))||_2$$ and proceed to weight surface normals by areas. A juxtaposition is shown in Fig. 4.
+Using the half-edge data structure one can easily iterate through neighboring edges (and thus triangles) of a vertex. Given a triangle with vertices $a,b,c\in\mathbb R^3$ we can then calculate its area as 
+
+$$A=||((b_2-a_2)(c_3-a_3)-(b_3-a_3)(c_2-a_2),(b_1-a_1)(c_3-a_3)-(b_3-a_3)(c_1-a_1),(b_1-a_1)(c_2-a_2)-(b_2-a_2)(c_1-a_1))||_2$$ 
+
+and proceed to weight surface normals by areas. A juxtaposition is shown in Fig. 4.
 
 <div align="center">
     <img src="./my_images/task3.png" width="100%">

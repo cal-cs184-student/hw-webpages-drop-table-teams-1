@@ -72,10 +72,12 @@ It seems that the result was so efficient the bottleneck was not rendering but t
 ## Part 3
 
 In uniform hemisphere sampling, we randomly sample shadow rays from the hemisphere on the primitive that the camera ray intersects, and then transform it to world coordinates to form a shadow ray; we then find the first intersection of the shadow ray with a primitive and use the zero-bounce radiance of that primitive as the radiance to plug into the Monte Carlo formula. In importance sampling, we sample light rays from points on the light sources to the camera ray's intersection point, and use the light source's radiance if the light ray does not pass through primitives in between. In both cases the Monte Carlo estimator used is
+
 $$
-\frac1N\sum\limits_{j=1}^N\frac{f_jL_j}{\textrm{pdf}_j}\frac{|d\cdot n|}{|d||n|},
+\frac1N\sum\limits_{j=1}^N\frac{f_jL_j}{pdf_j}\frac{|d\cdot n|}{|d||n|},
 $$
-where $f_j$ is the BSDF value, $L_j$ is the sampled radiance, $\textrm{pdf}_j$ is the PDF value, and the second fraction is the cosine term, where $d_{\textrm{shadow}}$ is the light/shadow ray's direction vector, and $n$ is the normal vector of the intersection point. Juxtapositions are shown in Fig. 3.
+
+where $f_j$ is the BSDF value, $L_j$ is the sampled radiance, $pdf_j$ is the PDF value, and the second fraction is the cosine term, where $d_{shadow}$ is the light/shadow ray's direction vector, and $n$ is the normal vector of the intersection point. Juxtapositions are shown in Fig. 3.
 
 <div align="center">
 	<img src="./my_images/part3-1.png" width="60%">
